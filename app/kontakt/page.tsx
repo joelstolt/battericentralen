@@ -22,7 +22,7 @@ export default function Kontakt() {
             <ScrollReveal>
               <div>
                 <h2 className="mb-8 text-2xl font-extrabold">Skicka ett meddelande</h2>
-                <ContactForm />
+                
               </div>
             </ScrollReveal>
 
