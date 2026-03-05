@@ -23,7 +23,7 @@ export const Navbar = () => {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled || isOpen ? "backdrop-blur-xl shadow-sm" : ""}`}
-      style={{ backgroundColor: "rgba(11,15,26,0.97)", borderBottom: "1px solid rgba(255,255,255,0.08)" }}>
+      style={{ backgroundColor: "var(--nav-bg)", borderBottom: "1px solid var(--border)" }}>
       
       {/* Top bar */}
       <div className="hidden border-b lg:block" style={{ borderColor: "var(--border)" }}>
