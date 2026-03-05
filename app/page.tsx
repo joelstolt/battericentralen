@@ -1,57 +1,11 @@
+import HeroSlider from "./components/HeroSlider";
 import { ScrollReveal } from "./components/ScrollReveal";
 
 export default function Home() {
   return (
     <main>
       {/* HERO */}
-      <section className="relative flex min-h-screen items-center overflow-hidden">
-        <div className="absolute inset-0">
-          <img src="https://images.unsplash.com/photo-1527515637462-cff94eebd21d?w=800&q=80" alt="" className="h-full w-full object-cover" />
-          <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, rgba(11,15,26,0.92) 0%, rgba(27,58,107,0.8) 50%, rgba(11,15,26,0.85) 100%)" }} />
-        </div>
-        <div className="grid-pattern absolute inset-0 opacity-30" />
-
-        <div className="relative z-10 mx-auto max-w-[1312px] w-full px-[5%] pt-32 pb-20">
-          <div className="max-w-2xl">
-            <div className="animate-fade-in-up mb-6 inline-flex items-center gap-2 rounded-full border border-[#F0C435]/20 bg-[#F0C435]/10 px-4 py-2">
-              <svg className="h-4 w-4 text-[#F0C435]" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd"/></svg>
-              <span className="text-sm font-semibold text-[#F0C435]">Vi levererar över hela Sverige</span>
-            </div>
-
-            <h1 className="animate-fade-in-up delay-100 mb-6 text-[clamp(2.5rem,6vw,4.5rem)] font-extrabold leading-[1.05] tracking-tight text-white">
-              Din{" "}<span className="text-[#F0C435]">Batterileverantör</span>
-            </h1>
-
-            <p className="animate-fade-in-up delay-200 mb-10 max-w-lg text-lg leading-relaxed text-white/70">
-              Oavsett om du representerar ett företag eller är privatkund erbjuder vi snabba, säkra och behovsanpassade leveranser av batterier, laddare och tillbehör till alla typer av fordon och elutrustning.
-            </p>
-
-            <div className="animate-fade-in-up delay-300 flex flex-wrap gap-4">
-              <a href="/kontakt" className="rounded-lg bg-[#F0C435] px-8 py-4 text-base font-bold text-[#0B0F1A] shadow-[0_4px_20px_rgba(240,196,53,0.3)] transition-all hover:shadow-[0_8px_30px_rgba(240,196,53,0.4)] hover:brightness-110">
-                Kontakta oss
-              </a>
-              <a href="/batterier" className="rounded-lg border-2 border-white/20 px-8 py-4 text-base font-semibold text-white transition-all hover:border-white/40 hover:bg-white/5">
-                Se vårt sortiment
-              </a>
-            </div>
-          </div>
-
-          {/* Stats */}
-          <div className="animate-fade-in-up delay-500 mt-20 grid grid-cols-2 gap-4 md:grid-cols-4">
-            {[
-              { number: "30+", label: "Års erfarenhet" },
-              { number: "1000+", label: "Nöjda kunder" },
-              { number: "24h", label: "Snabb leverans" },
-              { number: "100%", label: "Kvalitetsgaranti" },
-            ].map((stat, i) => (
-              <div key={i} className="rounded-xl border border-white/10 bg-white/5 p-5 text-center backdrop-blur-sm">
-                <p className="text-2xl font-extrabold text-[#F0C435] md:text-3xl">{stat.number}</p>
-                <p className="mt-1 text-xs font-medium uppercase tracking-wider text-white/50">{stat.label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <HeroSlider />
 
       {/* PRODUKTER */}
       <section className="px-[5%] py-24 md:py-32">
