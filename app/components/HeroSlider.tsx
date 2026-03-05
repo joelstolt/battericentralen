@@ -66,10 +66,10 @@ export default function HeroSlider() {
         />
 
         {/* Gold accent line */}
-        <div className="w-12 h-[3px] bg-[var(--accent)] mb-8 rounded-full" />
+        <div className="w-12 h-[3px] bg-[#F0C435] mb-8 rounded-full" />
 
         {/* Eyebrow */}
-        <span className="inline-block text-[var(--accent)] text-sm font-semibold tracking-widest uppercase mb-5">
+        <span className="inline-block text-[#F0C435] text-sm font-semibold tracking-widest uppercase mb-5">
           Batterileverantör sedan 1988
         </span>
 
@@ -77,7 +77,7 @@ export default function HeroSlider() {
         <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold leading-[1.08] text-[var(--text-primary)] mb-6">
           Din partner för
           <br />
-          <span className="text-[var(--accent)]">rätt batteri</span>
+          <span className="text-[#F0C435]">rätt batteri</span>
           <br />
           — direkt.
         </h1>
@@ -93,7 +93,7 @@ export default function HeroSlider() {
         <div className="flex flex-wrap gap-4 mb-14">
           <Link
             href="/kontakt"
-            className="inline-flex items-center gap-2 bg-[var(--accent)] text-[#0a0a0a] font-bold px-8 py-4 rounded-lg text-base hover:brightness-110 transition-all duration-200 shadow-lg shadow-[var(--accent)]/20"
+            className="inline-flex items-center gap-2 bg-[#F0C435] text-[#0B0F1A] font-bold px-8 py-4 rounded-lg text-base hover:brightness-110 transition-all duration-200 shadow-lg shadow-[#F0C435]/20"
           >
             Kontakta oss
           </Link>
@@ -109,7 +109,7 @@ export default function HeroSlider() {
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 border-t border-[var(--text-primary)]/10 pt-10">
           {stats.map((s) => (
             <div key={s.label}>
-              <div className="text-3xl font-bold text-[var(--accent)] mb-1">
+              <div className="text-3xl font-bold text-[#F0C435] mb-1">
                 {s.value}
               </div>
               <div className="text-sm text-[var(--text-muted)]">{s.label}</div>
@@ -143,7 +143,7 @@ export default function HeroSlider() {
             className="transition-all duration-500"
             style={{ opacity: fading ? 0 : 1, transform: fading ? "translateY(6px)" : "translateY(0)" }}
           >
-            <span className="inline-block bg-[var(--accent)]/15 border border-[var(--accent)]/30 text-[var(--accent)] text-xs font-semibold px-3 py-1 rounded-full mb-2 tracking-wide uppercase">
+            <span className="inline-block bg-[#F0C435]/15 border border-[#F0C435]/30 text-[#F0C435] text-xs font-semibold px-3 py-1 rounded-full mb-2 tracking-wide uppercase">
               {slides[current].tag}
             </span>
             <p className="text-white/80 text-sm font-medium">
